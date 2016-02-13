@@ -921,7 +921,7 @@ package
                 _local_2[_local_3] = mc3o[_local_3];
             };
             _local_4 = new URLRequest();
-            _local_4.url = (todo.Http + "//xat.com/images/ks/kshim.swf");
+            _local_4.url = (todo.Http + "//xat.dev/images/ks/kshim.swf");
             _local_4.method = URLRequestMethod.GET;
             _local_4.data = _local_2;
             mLoader2.load(_local_4);

@@ -94,10 +94,10 @@ package
         public static var w_r:uint = 0;
         public static var foe;
         public static var Http:String = "http:";
-        public static var usedomain:String = "//xat.com";
+        public static var usedomain:String = "//xat.dev";
         public static var chatdomain:String = (usedomain + "/web_gear/chat/");
-        public static var imagedomain:String = "//www.xatech.com/images/";
-        public static var flashdomain:String = "//www.xatech.com/web_gear/flash/";
+        public static var imagedomain:String = "//www.xat.dev/images/";
+        public static var flashdomain:String = "//www.xat.dev/web_gear/flash/";
         public static var DoBuildUserListScrollUp:Boolean;
         public static var messageecho:String;
         public static var MessageToSend:String = "";

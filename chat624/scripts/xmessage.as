@@ -1030,7 +1030,7 @@ package
                                             };
                                         } else
                                         {
-                                            HotLink = ("//xat.com/" + key);
+                                            HotLink = ("//xat.dev/" + key);
                                         };
                                 };
                             };

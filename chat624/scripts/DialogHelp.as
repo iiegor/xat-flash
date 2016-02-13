@@ -83,7 +83,7 @@ package
             var _local_1:*;
             var _local_2:*;
             this.helpinc = 0;
-            this.AddHelpLine("xat.com/wiki for detailed help.");
+            this.AddHelpLine("xat.dev/wiki for detailed help.");
             this.AddHelpLine("");
             for (_local_1 in xconst.HelpTable)
             {

@@ -84,9 +84,9 @@ package
         static var mcCode:MovieClip = null;
 
         {
-            iprules["E0"] = new Array(1, new Array("fwdelb00-1964376362.us-east-1.elb.amazonaws.com", "fwdelb01-1365137239.us-east-1.elb.amazonaws.com", "fwdelb02-53956973.us-east-1.elb.amazonaws.com", "fwdelb03-1789285345.us-east-1.elb.amazonaws.com"));
-            iprules["S0"] = new Array(0, new Array("s.xat.com", "s.xat.com", "s.xat.com", "s.xat.com", "s.xat.com", "s.xat.com", "s.xat.com", "s.xat.com", "s.xat.com", "s.xat.com", "s.xat.com", "s.xat.com", "s.xat.com", "s.xat.com", "s.xat.com", "s.xat.com"));
-            iprules["E1"] = new Array(1, new Array("fwdelb00-1964376362.us-east-1.elb.amazonaws.com:80:1", "fwdelb01-1365137239.us-east-1.elb.amazonaws.com:80:1", "fwdelb02-53956973.us-east-1.elb.amazonaws.com:80:1", "fwdelb03-1789285345.us-east-1.elb.amazonaws.com:80:1"));
+            iprules["E0"] = new Array(1, new Array("127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1"));
+            iprules["S0"] = new Array(0, new Array("127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1"));
+            iprules["E1"] = new Array(1, new Array("127.0.0.1:80:1", "127.0.0.1:80:1", "127.0.0.1:80:1", "127.0.0.1:80:1"));
             iprules["order"] = new Array(new Array("E0", 60), new Array("E1", 90), new Array("E0", 180), new Array("E1", 240), new Array("S0", 240));
             iprules["xFlag"] = 0;
         }
@@ -672,7 +672,8 @@ package
                     todo.LastScrollTime = undefined;
                     ta = PickIP(todo.w_useroom);
                     todo.sockdomain = ta[0];
-                    todo.useport = ta[1];
+                    //todo.useport = ta[1];
+					todo.useport = 1243; // use the same port on every connection
                     ctimeout = ta[2];
                     if ((((todo.sockdomain == "0")) || ((todo.useport == 0))))
                     {
@@ -1495,7 +1496,7 @@ package
                                             };
                                             if (todo.HasPowerA(todo.w_GroupPowers, 206))
                                             {
-                                                temp_comm = ((((todo.Http + "//xat.com/json/lang/customlang2.php?t=") + todo.w_room_cb) + "&r=") + todo.w_useroom);
+                                                temp_comm = ((((todo.Http + "//xat.dev/json/lang/customlang2.php?t=") + todo.w_room_cb) + "&r=") + todo.w_useroom);
                                                 xatlib.LoadVariables(temp_comm, chat.onLang);
                                             };
                                         } else
@@ -2986,7 +2987,7 @@ package
                                                                 if ((todo.FlagBits & xconst.f_Deleted))
                                                                 {
                                                                     chat.mainDlg.visible = false;
-                                                                    xatlib.getURL((todo.Http + "//xat.com"), "_self");
+                                                                    xatlib.getURL((todo.Http + "//xat.dev"), "_self");
                                                                     if (todo.lb != "n")
                                                                     {
                                                                         main.logoutbutonPress();
@@ -3316,7 +3317,7 @@ package
                                                                                             w_redirectdom = e.attributes.d;
                                                                                             if (w_redirectdom.substr(0, 1) == "e")
                                                                                             {
-                                                                                                w_redirectdom = (w_redirectdom + ".xatech.com");
+                                                                                                w_redirectdom = (w_redirectdom + ".xat.dev");
                                                                                             };
                                                                                         };
                                                                                         if (((!((e.attributes.p2 == undefined))) && (!((e.attributes.d2 == undefined)))))

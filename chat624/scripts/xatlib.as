@@ -2084,7 +2084,7 @@ package
         public static function xLog(_arg_1:String)
         {
             var _local_2:URLRequest = new URLRequest();
-            _local_2.url = ((((todo.Http + "//g.xat.com/images/w.gif?t=") + escape(_arg_1)) + "&r=") + Math.random());
+            _local_2.url = ((((todo.Http + "//g.xat.dev/images/w.gif?t=") + escape(_arg_1)) + "&r=") + Math.random());
             _local_2.method = URLRequestMethod.GET;
             var _local_3:URLLoader = new URLLoader();
             _local_3.load(_local_2);

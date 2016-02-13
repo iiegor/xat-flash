@@ -21,7 +21,7 @@ package
     public dynamic class basicxavi extends Sprite 
     {
 
-        const jdom = (todo.Http + "//xat.com/json/xavi/");
+        const jdom = (todo.Http + "//xat.dev/json/xavi/");
 
         var i;
         var j;

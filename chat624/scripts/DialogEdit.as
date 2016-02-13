@@ -327,7 +327,7 @@ package
                 _local_4 = ((" " + xconst.ST(50)) + " ");
             } else
             {
-                _local_3 = " xat.com/c ";
+                _local_3 = " xat.dev/c ";
                 _local_4 = ((" " + xconst.ST(51)) + " ");
             };
             xatlib.UrlPopup(_local_4, _local_3);
@@ -838,21 +838,21 @@ package
         function mcgetchat_onRelease(_arg_1:MouseEvent)
         {
             this.mcreturn_onRelease(_arg_1);
-            var _local_2:* = (todo.Http + "//xat.com/web_gear/chat.php");
+            var _local_2:* = (todo.Http + "//xat.dev/web_gear/chat.php");
             xatlib.UrlPopup(xconst.ST(29), _local_2);
         }
 
         function mcgetgroup_onRelease(_arg_1:MouseEvent)
         {
             this.mcreturn_onRelease(_arg_1);
-            var _local_2:* = ((((todo.Http + "//xat.com/web_gear/chat/embed.php?id=") + todo.w_room) + "&GroupName=") + global.gn);
+            var _local_2:* = ((((todo.Http + "//xat.dev/web_gear/chat/embed.php?id=") + todo.w_room) + "&GroupName=") + global.gn);
             xatlib.UrlPopup(xconst.ST(269), _local_2);
         }
 
         function mcmakeagroup_onRelease(_arg_1:MouseEvent)
         {
             this.mcreturn_onRelease(_arg_1);
-            var _local_2:* = (todo.Http + "//xat.com/web_gear/chat/creategroup.php");
+            var _local_2:* = (todo.Http + "//xat.dev/web_gear/chat/creategroup.php");
             xatlib.UrlPopup(xconst.ST(92), _local_2);
         }
 
@@ -874,12 +874,12 @@ package
             var _local_5:*;
             if (_arg_3 != true)
             {
-                _local_5 = (((((todo.Http + "//xat.com/web_gear/chat.php?id=") + this.eip_id) + "&pw=") + this.eip_pw) + "&f=1");
+                _local_5 = (((((todo.Http + "//xat.dev/web_gear/chat.php?id=") + this.eip_id) + "&pw=") + this.eip_pw) + "&f=1");
             } else
             {
-                _local_5 = ((((todo.Http + "//xat.com/web_gear/chat/embed.php?id=") + _arg_1) + "&GroupName=") + _arg_2);
+                _local_5 = ((((todo.Http + "//xat.dev/web_gear/chat/embed.php?id=") + _arg_1) + "&GroupName=") + _arg_2);
             };
-            var _local_4 = ((('<embed src="//www.xatech.com/web_gear/chat/chat.swf" quality="high" bgcolor="#000000" width="540" height="405" name="chat" FlashVars="id=' + _arg_1) + (((_arg_3 == true)) ? ("&gn=" + _arg_2) : "")) + '" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="//xat.com/update_flash.shtml" /><br><small><a target="_BLANK" href="//xat.com/web_gear/');
+            var _local_4 = ((('<embed src="//www.xatech.dev/web_gear/chat/chat.swf" quality="high" bgcolor="#000000" width="540" height="405" name="chat" FlashVars="id=' + _arg_1) + (((_arg_3 == true)) ? ("&gn=" + _arg_2) : "")) + '" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="//xat.com/update_flash.shtml" /><br><small><a target="_BLANK" href="//xat.com/web_gear/');
             if (_arg_3)
             {
                 _local_4 = (_local_4 + (((((((((("chat/embed.php?id=" + _arg_1) + "&GroupName=") + _arg_2) + '">Get ') + _arg_2) + ' chat group</a> | <a target="_BLANK" href="//xat.com/') + _arg_2) + '"> Goto ') + _arg_2) + " website</a></small><br>"));

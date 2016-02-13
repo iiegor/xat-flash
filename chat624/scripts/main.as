@@ -436,10 +436,10 @@ package
                     musiccode = _local_2[1];
                     if (mcxMusicPlayer == null)
                     {
-                        Security.allowDomain("xat.com");
-                        Security.allowDomain("www.xatech.com");
+                        Security.allowDomain("xat.dev");
+                        Security.allowDomain("www.xat.dev");
                         mcxMusicPlayer = new Loader();
-                        _local_3 = new URLRequest("//xat.com/web_gear/flash/musicplayer.swf?a7");
+                        _local_3 = new URLRequest("//xat.dev/web_gear/flash/musicplayer.swf?a7");
                         mcxMusicPlayer.load(_local_3);
                         mcxMusicPlayer.contentLoaderInfo.addEventListener(Event.COMPLETE, chat.mainDlg.onMusicPlayerLoaded);
                         mcxMusicPlayer.visible = false;
@@ -705,10 +705,10 @@ package
             {
                 if (!todo.bThin)
                 {
-                    Security.allowDomain("xat.com");
-                    Security.allowDomain("www.xatech.com");
+                    Security.allowDomain("xat.dev");
+                    Security.allowDomain("www.xat.dev");
                     mcxLoad = new Loader();
-                    mRequest = new URLRequest("//xat.com/web_gear/flash/load2.swf?a3");
+                    mRequest = new URLRequest("//xat.dev/web_gear/flash/load2.swf?a3");
                     mcxLoad.load(mRequest);
                     mcxLoad.contentLoaderInfo.addEventListener(Event.COMPLETE, this.onLoadLoaded);
                     mcxLoad.visible = false;
@@ -840,7 +840,7 @@ package
             logo.addEventListener(MouseEvent.MOUSE_DOWN, this.onxatLogo);
             logo.visible = false;
             addChild(logo);
-            main.hint.AddEasyHint(logo, (todo.Http + "//xat.com"), {"Pos":0});
+            main.hint.AddEasyHint(logo, (todo.Http + "//xat.dev"), {"Pos":0});
             addChild(this.emotes);
             ctabsmc.CreateTabs();
             utabsmc.CreateVisitorsTabs();
@@ -1080,7 +1080,7 @@ package
 
         public function onxatLogo(_arg_1:MouseEvent)
         {
-            var _local_2:* = (todo.Http + "//xat.com");
+            var _local_2:* = (todo.Http + "//xat.dev");
             xatlib.UrlPopup(xconst.ST(8), _local_2);
         }
 

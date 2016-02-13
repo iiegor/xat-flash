@@ -118,8 +118,8 @@ package
             stage.addEventListener(Event.RESIZE, this.onResize);
             if (todo.config["WEB"])
             {
-                Security.allowDomain("xat.com");
-                Security.allowInsecureDomain("xat.com");
+                Security.allowDomain("xat.dev");
+                Security.allowInsecureDomain("www.xat.dev");
             };
             if (todo.config["WEB"])
             {
