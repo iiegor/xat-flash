@@ -1039,7 +1039,7 @@ package
             {
                 PuzzleOpts.Vol = todo.w_Vol[1];
             };
-            PuzzleLoader = xatlib.LoadMovie(main.puzzle_layer, ((((todo.Http + "//www.xatech.com/web_gear/flash/") + (50000 + PuzzleOpts.p)) + ".swf?") + global.gb), PuzzleLoaded);
+            PuzzleLoader = xatlib.LoadMovie(main.puzzle_layer, ((((todo.Http + "//www.xat.dev/web_gear/flash/") + (50000 + PuzzleOpts.p)) + ".swf?") + global.gb), PuzzleLoaded);
             main.puzzle_layer.mouseEnabled = false;
             PuzzleLoader.mouseEnabled = false;
             network.UpdateChannel(0, todo.w_userno);

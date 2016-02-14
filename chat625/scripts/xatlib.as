@@ -858,7 +858,7 @@ package
             var _local_2:Number = xInt(_arg_1);
             if ((((_local_2 > 0)) && ((_local_2 <= 1758))))
             {
-                return ((((todo.Http + "//www.xatech.com/web_gear/chat/av/") + _arg_1) + ".png"));
+                return ((((todo.Http + "//www.xat.dev/web_gear/chat/av/") + _arg_1) + ".png"));
             };
             return (String(_arg_1));
         }

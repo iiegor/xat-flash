@@ -38,6 +38,7 @@ package
             "tinypic":"com"
         };
         private static const doms_cd = {
+			"xat":"dev",
             "xat":"com",
             "xatech":"com",
             "photobucket":"com"

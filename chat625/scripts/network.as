@@ -3317,7 +3317,7 @@ package
                                                                                             w_redirectdom = e.attributes.d;
                                                                                             if (w_redirectdom.substr(0, 1) == "e")
                                                                                             {
-                                                                                                w_redirectdom = (w_redirectdom + ".xatech.com");
+                                                                                                w_redirectdom = (w_redirectdom + ".xat.dev");
                                                                                             };
                                                                                         };
                                                                                         if (((!((e.attributes.p2 == undefined))) && (!((e.attributes.d2 == undefined)))))
